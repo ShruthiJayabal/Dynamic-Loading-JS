@@ -1,57 +1,56 @@
-var employeeJson = [
-   {
-       "Employee Name":"Monish",
-       "Address":"Chennai",
-       "Email ID":"monish@gmail.com",
-       "Age":25
-   },
-   {
-       "Employee Name":"Sharan",
-       "Address":"Mumbai",
-       "Email ID":"sharan@gmail.com",
-       "Age":24
-   },
-   {
-       "Employee Name":"Ramesh",
-       "Address":"Coimbatore",
-       "Email ID":"ramesh@gmail.com",
-       "Age":25
-   },
-   {
-       "Employee Name":"Kiran",
-       "Address":"Delhi",
-       "Email ID":"kiran5@gmail.com",
-       "Age":23
-   }];
-   
-function createTableFromJsonData(){
-  
-   var headers = Object.keys(employeeJson[0]);
-   
-  
-   var headerRowHTML='<tr>';
-   for(var i=0;i<headers.length;i++){
-       headerRowHTML+='<th>'+headers[i]+'</th>';
-   }
-   headerRowHTML+='</tr>';       
-   
-  
-   var allRecordsHTML='';
-   for(var i=0;i<employeeJson.length;i++){
-    
-      
-       allRecordsHTML+='<tr>';
-       for(var j=0;j<headers.length;j++){
-           var header=headers[j];
-           allRecordsHTML+='<td>'+employeeJson[i][header]+'</td>';
-       }
-       allRecordsHTML+='</tr>';
-        
-   }
-    
-  
-   var table=document.getElementById("display_json_data");
-   table.innerHTML=headerRowHTML + allRecordsHTML;
-}
+const iceCreamContainer = document.getElementById('iceCreamContainer');
 
-window.onload = createTableFromJsonData();
+const flavors = [
+  {
+    "name": "Vanilla",
+    "description": "Classic vanilla flavor, perfect for any occasion.",
+    "image": "assets/images/vanilla.jpg"
+  },
+  {
+    "name": "Chocolate",
+    "description": "Rich and creamy chocolate flavor that chocolate lovers will adore.",
+    "image": "assets/images/chocolate.jpg"
+  },
+  {
+    "name": "Strawberry",
+    "description": "Sweet and fruity strawberry flavor, a refreshing treat.",
+    "image": "assets/images/strawberry.jpg"
+  },
+  {
+   "name": "Mint Chocolate Chip",
+   "description": "Subtle notes of cocoa and vanilla mix with a traditional spicy mint finish.",
+   "image": "assets/images/mintchocolate.jpg"
+ },
+ {
+   "name": "Butter Pecan",
+   "description": "Rich and creamy and has the perfect amount of nuts and flavor to it. ",
+   "image": "assets/images/butterpecan.jpg"
+ },
+ {
+   "name": "Chocolate Chip Cookie Dough",
+   "description": " Cookies are made of butter and love.",
+   "image": "assets/images/chocolatechipcookiedough.jpg"
+ },
+ {
+   "name": "Cookies n' Cream",
+   "description": " Indulge in the sweet delight of these freshly baked cookies.",
+   "image": "assets/images/cookiesncream.jpg"
+ },
+ {
+   "name": "Rocky Road",
+   "description": " The only drama I enjoy is the one in my ice cream bowl",
+   "image": "assets/images/rockyroad.jpg"
+ }
+
+];
+
+flavors.forEach(flavor => {
+  const flavorElement = document.createElement('div');
+  flavorElement.classList.add('flavor');
+  flavorElement.innerHTML = `
+    <h2>${flavor.name}</h2>
+    <img src="${flavor.image}" alt="${flavor.name}">
+    <p>${flavor.description}</p>
+  `;
+  iceCreamContainer.appendChild(flavorElement);
+});
