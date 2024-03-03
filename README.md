@@ -1,1 +1,3 @@
-# Dynamic-Loading-JS
+# Dynamic Loading JS
+
+ JSON file dynamically using JS DOM 
