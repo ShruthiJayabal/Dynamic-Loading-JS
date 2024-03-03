@@ -1,0 +1,43 @@
+ [
+    {
+      "name": "Vanilla",
+      "description": "Classic vanilla flavor, perfect for any occasion.",
+      "image": "assets/images/vanilla.jpg"
+    },
+    {
+      "name": "Chocolate",
+      "description": "Rich and creamy chocolate flavor that chocolate lovers will adore.",
+      "image": "assets/images/chocolate.jpg"
+    },
+    {
+      "name": "Strawberry",
+      "description": "Sweet and fruity strawberry flavor, a refreshing treat.",
+      "image": "assets/images/strawberry.jpg"
+    },
+    {
+     "name": "Mint Chocolate Chip",
+     "description": "Subtle notes of cocoa and vanilla mix with a traditional spicy mint finish.",
+     "image": "assets/images/mintchocolate.jpg"
+   },
+   {
+     "name": "Butter Pecan",
+     "description": "Rich and creamy and has the perfect amount of nuts and flavor to it. ",
+     "image": "assets/images/butterpecan.jpg"
+   },
+   {
+     "name": "Chocolate Chip Cookie Dough",
+     "description": " Cookies are made of butter and love.",
+     "image": "assets/images/chocolatechipcookiedough.jpg"
+   },
+   {
+     "name": "Cookies n' Cream",
+     "description": " Indulge in the sweet delight of these freshly baked cookies.",
+     "image": "assets/images/cookiesncream.jpg"
+   },
+   {
+     "name": "Rocky Road",
+     "description": " The only drama I enjoy is the one in my ice cream bowl",
+     "image": "assets/images/rockyroad.jpg"
+   }
+  
+  ]
